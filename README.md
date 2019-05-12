@@ -1,2 +1,3 @@
-# kahootsmashack.github.io
-Kahoot Smashack GitHub Repo
+# Kahoot Smashack
+Kahoot Smashack is in maintenance.
+Please come back later.
