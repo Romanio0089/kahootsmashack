@@ -1,0 +1,16 @@
+$themes: (
+    light: (
+        textColor: #333, 
+        backgroundColor: #fff, 
+        selectedBackground: whitesmoke, 
+        navigatorTextColor: #333, 
+        navigatorBackgroundColor: #fff
+    ), 
+    dark: (
+        textColor: #fff, 
+        backgroundColor: #000, 
+        selectedBackground: #0B0B0B, 
+        navigatorTextColor: #fff, 
+        navigatorBackgroundColor: #0F0F0F
+    )
+);

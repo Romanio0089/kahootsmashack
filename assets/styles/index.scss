@@ -1,0 +1,275 @@
+@import "themes.scss";
+@import "../node_modules/materialize-css/sass/components/_color-variables.scss";
+$secondary-color: color("indigo", "base") !default;
+@import "../node_modules/materialize-css/sass/materialize.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@mixin themify($themes: $themes) {
+
+    @each $theme,
+    $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+
+            @each $key,
+            $submap in $map {
+                $value: map-get(map-get($themes, $theme),
+                "#{$key}");
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed($key) {
+    @return map-get($theme-map,
+    $key);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-stretch: 100%;
+}
+
+body {
+    overflow-y: hidden;
+    padding-bottom: 7vh;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin-bottom: 20px;
+
+    @include themify($themes) {
+        color: themed("textColor");
+        background-color: themed("backgroundColor");
+    }
+}
+
+input {
+    @include themify($themes) {
+        color: themed("textColor");
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+#▲,
+#◆,
+#●,
+#■,
+#random{
+    margin-left: .5vw;
+    margin-right: .5vw;
+    width: 10vw;
+}
+
+#server-ui-wrapper {
+    opacity: 0;
+}
+
+.container {
+    min-height: 80vh;
+}
+
+.centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 7.5vmin;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 4vmin;
+    font-weight: normal;
+}
+
+.message-container {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    display: absolute;
+}
+
+.message-container .card {
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15);
+    min-width: 20vw;
+}
+
+.navigator {
+    z-index: 10000;
+    font-size: 3.5vmin;
+    font-weight: 700;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 7vh;
+
+    @include themify($themes) {
+        color: themed("navigatorTextColor");
+        background-color: themed("navigatorBackgroundColor");
+    }
+}
+
+.navigator .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/2);
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.navigator .box.active {
+    @include themify($themes) {
+        background-color: themed("selectedBackground");
+    }
+
+    cursor: default;
+    pointer-events: none;
+}
+
+.kahoot-color-0 {
+    background-color: #e21b3c;
+}
+
+.kahoot-color-1 {
+    background-color: #1368ce;
+}
+
+.kahoot-color-2 {
+    background-color: #d89e00;
+}
+
+.kahoot-color-3 {
+    background-color: #298f0d;
+}
+
+.kahoot-color-r {
+    background-color: #b20caa;
+}
+
+.seperator {
+    margin-bottom: 2vh;
+}
+
+.add-players-card {
+    margin-top: 1vh;
+}
+
+.white-input {
+    input {
+        color: #fff;
+    }
+
+    input+label:not(span) {
+        color: #fff !important;
+    }
+
+    input:focus {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75) !important;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.75) !important;
+    }
+}
+
+.players-wrapper {
+    padding-top: 1vh;
+    max-height: 10vh;
+    overflow: auto;
+}
+
+.collapsible {
+    border: none;
+
+    .collapsible-header {
+        @include themify($themes) {
+            background-color: themed("navigatorBackgroundColor");
+        }
+
+        border-bottom: none;
+    }
+
+    .collapsible-body {
+        @include themify($themes) {
+            background-color: themed("navigatorBackgroundColor");
+        }
+
+        border-bottom: none;
+    }
+}
+
+
+.noselect {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.centered-text {
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.answer-wrapper {
+    button {
+        width: 15vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+}
+
+.inset {
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(160, 160, 160, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(160, 160, 160, 0.8);
+}
