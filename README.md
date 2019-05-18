@@ -1,12 +1,4 @@
-# Kahoot Smashack
-Kahoot Smashack is in maintenance.
-Please come back later.
+# this project is no longer being worked on
 
-The best Kahoot smasher/hack !
-Kahoot Smashack !
-
-You can use this to troll your friends while playing Kahoot !
-
-Please note that some bugs may happen while you are hacking the Kahoot game.
-
-Enjoy !
+# kahoot-smasher.github.io
+A Robot for kahoot, features: Answers Questions, Attempts to get on the leaderboard, you can name it what ever you want, choose how many bots you want to have
