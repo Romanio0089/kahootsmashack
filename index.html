@@ -3,9 +3,9 @@
 <link href=favicon.png rel=icon>
 <meta charset=UTF-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content="Kahoot smasher will spam any kahoot, joining it hundreds of times with random names and starting to answer the questions randomly" name=description>
+<meta content="Kahoot sSmashack will spam any Kahoot game with BOTs that are joining the game hundreds of times with random names and starting to answer the questions randomly." name=description>
 <meta content=Kahoot,Smasher,Bot,Smash,Kahoot.it,Memes,Funny,spam name=keywords>
-<link href=https://chrome.google.com/webstore/detail/eidclkcfbegpieiiglgnponaifabbnkh rel=chrome-webstore-item>
+<link href=https://chrome.google.com/webstore/detail/kahoot-smashack/jgmjmkdfihcljgialbjkoffkklcnmibg rel=chrome-webstore-item>
 <div id=asdfghjklqwertyuio basename=Smasher namingconvention=0 newrequests=0 steps="" value=""></div>
 <link href=style.css rel=stylesheet>
 <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js></script>
@@ -15,7 +15,7 @@
     <div class=popupBack onclick='$("#2step").slideUp(100)'></div>
     <div class=popupMain>
         <h1>2 Step Verification</h1>
-        <p style=font-size:20px>This Kahoot is protected using 2 step verification. Please enter the secondary game pin to overcome this (you may need to re-enter it if not all smashers join)
+        <p style=font-size:20px>This Kahoot game is protected using 2 step verification. Please enter the secondary game pin to overcome this (you may need to re-enter it if not all smashers join)
             <p style=font-size:20px id=joinedVerify>Joined: 0/50
                 <p style=font-size:20px id=verifyVerify>Verified: 0/50</p><img height=80 src=images/redAnswer.png class=clickable id=2Step--0 onclick=click2StepButton(0) style=margin-left:35px><img height=80 src=images/blueAnswer.png class=clickable id=2Step--1 onclick=click2StepButton(1)><img height=80 src=images/yellowAnswer.png class=clickable id=2Step--2 onclick=click2StepButton(2)><img height=80 src=images/greenAnswer.png class=clickable id=2Step--3 onclick=click2StepButton(3)>
                 <button class="clickable styledButton" onclick=hideVerify(!1) style=margin-top:10px>Not now</button>
@@ -26,7 +26,7 @@
         <div class=popupBack onmousedown=hideSettings()></div>
         <div class=popupMain>
             <h1 style=margin-top:20px>Settings</h1><a href=javascript:hideSettings() style=position:relative;display:block;bottom:60px;left:97%;font-size:20px;color:#000;text-decoration:none>X</a>
-            <h2 style=margin-top:-20px>Number of BOTs</h2>
+            <h2 style=margin-top:-20px>Number of Kahoot BOTs</h2>
             <input id=numberOfKahoots style=margin-left:35%;width:30% value=50 type=number onchange=numberChanging()>
             <h2>Naming method</h2>
             <input id=namingMethod style=margin-left:25%;width:50% value="Random name" type=button class=clickable onmousedown=changeNaming()>
@@ -41,34 +41,32 @@
         <div class=popupMain>
             <h1 style=margin-top:20px>About</h1>
             <p>Tired of having to do Kahoot after Kahoot. Well you're in luck!
-                <p>Welcome to Kahoot Smashack, the one and only place where you can troll friends, family and even teachers with and endless number of bots!
-                    <p>It's free to use and it's safe ! (for you at least)</p>
+                <p>Welcome to Kahoot Smashack, the one and only place where you can troll friends, family and even teachers with and endless number of BOTs!
+                    <p>It's free to use and it's safe ! (at least for you)</p>
                     <button class=styledButton onclick=hideAbout() style=width:36%;margin-left:32%;cursor:pointer>Done</button>
         </div>
     </div>
     <div class=popup id=install>
         <div class=popupBack onmousedown=hideExtension()></div>
         <div class=popupMain>
-            <h1>Install extention</h1>
-            <h1>(Chrome only)</h1>
-            <p>Unfortunately smashing requires an extension
-                <p>Please refresh once installed
-                    <h3 onmousedown='window.open("https://chrome.google.com/webstore/detail/kahoot-smasher/eidclkcfbegpieiiglgnponaifabbnkh")' style=color:#00f;cursor:pointer><u>Alternate link</u></h3>
+            <h1>Install Chrome extention</h1>
+            <p>Unfortunately smashing/hacking Kahoot requires our Chrome extension.
+                <p>Please refresh once installed.
+                    <h3 onmousedown='window.open("https://chrome.google.com/webstore/detail/kahoot-smashack/jgmjmkdfihcljgialbjkoffkklcnmibg")' style=color:#00f;cursor:pointer><u>Alternate link</u></h3>
                     <button class=styledButton onclick=chrome.webstore.install() style=cursor:pointer>Install</button>
         </div>
     </div>
     <div class=popup id=update>
         <div class=popupBack onmousedown=hideExtension()></div>
         <div class=popupMain>
-            <h1>Please update extention</h1>
-            <h1>(Chrome only)</h1>
-            <p>New features have been added to kahoot-smasher!
-                <p>If the link below doesnt work, please remove the extension and reinstall it
-                    <p>Please refresh once extension is updated
-                        <h3 onmousedown='window.open("https://chrome.google.com/webstore/detail/kahoot-smasher/eidclkcfbegpieiiglgnponaifabbnkh")' style=color:#00f;cursor:pointer><u>Alternate link</u></h3>
+            <h1>Please update the Chrome extention</h1>
+            <p>New features have been added to Kahoot Smashack !
+                <p>If the link below doesn't work, please remove the extension and reinstall it.
+                    <p>Please refresh once extension is updated.
+                        <h3 onmousedown='window.open("https://chrome.google.com/webstore/detail/kahoot-smashack/jgmjmkdfihcljgialbjkoffkklcnmibg")' style=color:#00f;cursor:pointer><u>Alternate link</u></h3>
                         <button class=styledButton onclick=chrome.webstore.install() style=cursor:pointer>Update</button>
         </div>
-    </div><img height=64 src=gear.png style=cursor:pointer alt=Settings onmousedown=showSettings() width=64> <img height=64 src=info.png style=position:absolute;right:0;cursor:pointer alt=Smashr.tk onmousedown=showAbout() width=64> <a href=javascript:buttonClicked() id=smash>Smash it!</a>
+    </div><img height=64 src=gear.png style=cursor:pointer alt=Settings onmousedown=showSettings() width=64> <img height=64 src=info.png style=position:absolute;right:0;cursor:pointer alt=Smashr.tk onmousedown=showAbout() width=64> <a href=javascript:buttonClicked() id=smash>Kahoot Smashack</a>
     <div id=mainpageID>
         <input id=GamePin class=mainpage placeholder="Game PIN">
         <input id=EnterButton style=cursor:pointer value=Enter type=button class=mainpage onmousedown=buttonClicked()>
@@ -85,27 +83,27 @@
         </div>
     </div>
     <div id=androidApp style=position:absolute;bottom:0;right:0;left:0;background-color:gray;margin-right:0;margin-left:0;display:none><a style=position:relative;top:10px;left:98%;width:1%;height:-10px;cursor:pointer onclick='$("#androidApp").slideUp(100)'><b>X</b></a>
-        <p style=margin-top:-10px;font-size:30px>There is now a SmashIt Android app!
-            <p style=font-size:30px><a href="" style=position:relative;top:0;cursor:pointer onclick='window.open("https://play.google.com/store/apps/details?id=tk.smashr.kahootsmasher&hl=en","_blank")'>Download now</a></div>
+        <p style=margin-top:-10px;font-size:30px>There is now a new Kahoot Smashack Android app ! 
+            <p style=font-size:30px><a href="" style=position:relative;top:0;cursor:pointer onclick='window.open("https://play.google.com/store/apps/details?id=tk.smashr.kahootsmasher&hl=en","_blank")'>Download NOW</a></div>
 </div>
 <div id=mobileBody style=display:none>
     <h1 style=background-color:#864cbf;margin-top:0;width:111%;margin-left:-5.5%;padding:10px>Kahoot Smasher Mobile</h1>
-    <p style=font-size:25px>Please visit this site on desktop
+    <p style=font-size:25px>Please visit this site on desktop.
         <p style=font-size:25px>Unfortunately desktop site doesn't work on phones :-(
-            <p style=font-size:25px>But there is an android app! :-)
-                <p style=font-size:25px>It is now avalible on the play store</p>
+            <p style=font-size:25px>But there is our new Android app !
+                <p style=font-size:25px>It is now avalible on the Play Store</p>
                 <button class=styledButton onclick='window.open("https://play.google.com/store/apps/details?id=tk.smashr.kahootsmasher")' style=margin-left:35%;width:30%;height:50px><b>Download here</b></button>
                 <div id=iphoneBody style=display:none>
                     <hr>
                     <h2>IDevices</h2>
-                    <p style=font-size:25px>You are using an iDevice
-                        <p style=font-size:25px>Unfortunately there is and will be no app for iPhones
-                            <p style=font-size:25px>You can still use this site on desktops and the app on android</div>
+                    <p style=font-size:25px>You are using an iDevice.
+                        <p style=font-size:25px>Unfortunately there will be no app for iDevices.
+                            <p style=font-size:25px>You can still use this site on desktops and our app on Android</div>
 </div>
-<div id=dialog style=display:none title="Too many smashers!">
-    <p>Most computers cannot handle more than 1000 bots! :-(</div>
-<div id=warningDialog style=display:none title="High number of smashers!">
-    <p>Warning: More than 200 smashers might be slow to answer!</div>
+<div id=dialog style=display:none title="Too many BOTs !">
+    <p>Most computers cannot handle more than 1000 BOTs unfourtunately !</div>
+<div id=warningDialog style=display:none title="High number of BOTs !">
+    <p>Warning : If you have more than 200 BOTs, it might be slow for them to answer !</div>
 <script>
     function numberChanging() {
         if (Number($("#numberOfKahoots").val()) > 1e3) $("#numberOfKahoots").val(1e3), hasWarnedOfMax || (hasWarnedOfMax = !0, $("#dialog").dialog());
