@@ -1,3 +1,5 @@
 # Kahoot Smashack
 
-Kahoot Smashack is in maintenance. Please come back later.
+Kahoot Smashack got patched by Kahoot. I am working on a fix. I'm so sorry...
+
+Come back and check later...
