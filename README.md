@@ -1,5 +1,3 @@
 # Kahoot Smashack
 
-Kahoot Smashack got patched by Kahoot. I am working on a fix. I'm so sorry...
-
-Come back and check later...
+Kahoot Smashack got patched by Kahoot and is now discontinued.
