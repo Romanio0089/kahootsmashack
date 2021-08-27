@@ -4,8 +4,6 @@
 
 ## Credits
 
-  
-
 Modified by CraizyRox / Romanio0089
 
 Originally made by cbozey (Reddit: @XeComputerboi) (YT: CBOZEY_BOY19)
