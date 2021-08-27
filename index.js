@@ -77,7 +77,8 @@ function ads() {
   console.log("Originally made by cbozey (Reddit: @XeComputerboi) (YT: CBOZEY_BOY19)")
   console.log("V3.0.1")
   console.log("==================\n")
-  console.log("To refresh the page, click on Stop, and then click Run.\n")
+  console.log("To refresh the page, click on Stop, and then click Run.")
+  console.log("CTRL+V does NOT work. If you want to paste the code, please right click, and select paste.")
 }
 ads()
 
