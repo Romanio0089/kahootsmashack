@@ -18,6 +18,6 @@ Developed with JavaScript.
 
 Script is running and hosted by replit.com.
 
-The index.html and the GitHub Pages is a proxy to the replit.com projet.
+The index.html and the GitHub Pages is a proxy to the replit.com project.
 
 Version V3.0.2
