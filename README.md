@@ -1,3 +1,3 @@
-# Kahoot Smashack [DISCONTINUED]
+# Kahoot Smashack
 
-Kahoot Smashack got patched by Kahoot and is now discontinued.
+## Kahoot Smashack V3 is coming soon...
