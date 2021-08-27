@@ -88,7 +88,7 @@ if (antibotmode == "y") {
   console.log("NOTE: 2-factor brute forcing does not work with antibot mode.")
 }
 
-pin = readline.question('Enter Kahoot game pin > ');
+pin = readline.question('Enter Kahoot game PIN > ');
 bots = readline.question('Enter desired amount of bots > ');
 if (antibotmode == "y") {
   ranname = true
