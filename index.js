@@ -1,22 +1,24 @@
-console.log("Kahoot Smashack is currently loading!")
+console.log("Kahoot Smashack V3.0.2")
 console.log("Modified by CraizyRox (Romanio0089).")
 console.log("Originally made by cbozey (Reddit: @XeComputerboi) (YT: CBOZEY_BOY19)\n")
+console.log("To refresh the page, click on Stop, and then click Run.\n")
+console.log("Kahoot Smashack is currently loading!\n")
 //requires
 readline = require('readline-sync');
-console.log("Required readline-sync")
+//console.log("Required readline-sync")
 const Kahoot = require("kahoot.js-updated");
-console.log("Required kahoot.js-updated")
+//console.log("Required kahoot.js-updated")
 var words = require('an-array-of-english-words')
-console.log("Required an-array-of-english-words")
+//console.log("Required an-array-of-english-words")
 const request = require('request');
-console.log("Required request")
+//console.log("Required request")
 var random = require('random-name')
-console.log("Required random-name")
+//console.log("Required random-name")
 var setTitle = require('console-title');
-console.log("Required console-title")
+//console.log("Required console-title")
 setTitle('Kahoot flooder');
 var beep = require('beepbeep')
-console.log("Required beepbeep")
+//console.log("Required beepbeep")
 
 //stuff
 function getRandomInt(min, max) {
@@ -75,6 +77,7 @@ function ads() {
   console.log("Originally made by cbozey (Reddit: @XeComputerboi) (YT: CBOZEY_BOY19)")
   console.log("V3.0.1")
   console.log("==================\n")
+  console.log("To refresh the page, click on Stop, and then click Run.\n")
 }
 ads()
 
