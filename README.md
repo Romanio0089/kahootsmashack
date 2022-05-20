@@ -1,6 +1,6 @@
 # Kahoot Smashack V3
 
-### WORKING AS OF 27TH AUGUST 2021
+### PATCHED AS OF 20TH MAY 2022
 
 ## About
 
