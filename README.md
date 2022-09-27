@@ -1,10 +1,8 @@
 # Kahoot Smashack V3
 
-### PATCHED AS OF 20TH MAY 2022
+**PATCHED AS OF 20TH MAY 2022**
 
-## About
-
-Kahoot Smashack is a Kahoot hack that lets you flood Kahoot games with tons of bots. You can even control the bots to answer what you want.
+*Kahoot Smashack* is a program developed in order to troll Kahoot lobbies by flooding them with bots.
 
 ## Credits
 
