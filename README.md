@@ -1,6 +1,6 @@
 # Kahoot Smashack V3
 
-*Kahoot Smashack* is a program made to flood Kahoot lobbies to troll various people, like your friends, or teacher.
+*Kahoot Smashack* is a program made to flood Kahoot lobbies to troll various people, like your friends, or teachers.
 
 **Kahoot Smashack V3 has been patched as of 20th May 2022**
 
