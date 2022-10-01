@@ -1,21 +1,9 @@
 # Kahoot Smashack V3
 
-**PATCHED AS OF 20TH MAY 2022**
+**Kahoot Smashack V3 has been patched as of 20th May 2022**
 
-*Kahoot Smashack* is a program developed in order to troll Kahoot lobbies by flooding them with bots.
+*Kahoot Smashack* is a program made to flood Kahoot lobbies to troll various people, like your friends, or teacher.
 
 ## Credits
 
-Modified by CraizyRox / Romanio0089
-
-Script originally made by cbozey (Reddit: @XeComputerboi) (YT: CBOZEY_BOY19)
-
-## More Info
-
-Developed with JavaScript.
-
-Script is running and hosted by replit.com.
-
-The index.html and the GitHub Pages is a proxy to the replit.com project.
-
-Version V3.0.2
+The script behind Kahoot Smashack is generally not developed my me (Romanio0089), but by other people. What I do is: I take that script, and make it easier and potentially faster to use by removing patched or useless features and redoing the interface, and hosting it. And so, all credits for the script are given to the respective developer.
